@@ -6,13 +6,13 @@ runs:
   using: 'composite'
   steps:
     - name: Run ESLint
-    run: yarn lint
-    shell: bash
+      run: yarn lint
+      shell: bash
 
-  - name: Run Prettier
-    run: yarn prettier:check
-    shell: bash
+    - name: Run Prettier
+      run: yarn prettier:check
+      shell: bash
 
-  - name: Run tests
-    run: yarn test
-    shell: bash
+    - name: Run tests
+      run: yarn test
+      shell: bash
