@@ -3,7 +3,7 @@ name: 'Setup Node and Cache Dependencies'
 description: 'Setup Node 20 and Cache Installed Dependencies'
 
 runs:
-  runs-on: ubuntu-latest
+  using: 'composite'
   steps:
     - name: Setup Node.js
       uses: actions/setup-node@v4

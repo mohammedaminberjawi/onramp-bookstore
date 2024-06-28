@@ -3,7 +3,7 @@ name: 'Lint, Prettify, and Test'
 description: 'Run ESLint, Prettier, and Jest'
 
 runs:
-  runs-on: ubuntu-latest
+  using: 'composite'
   steps:
     - name: Run ESLint
     run: yarn lint
